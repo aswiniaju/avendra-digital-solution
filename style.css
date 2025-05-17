@@ -1,0 +1,502 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e5e8eb;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 40px; /* Adjust size */
+}
+
+.search-bar {
+  margin-top: 10px;
+}
+
+.search-bar input {
+  padding: 7px 150px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 1500;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00C4CC;
+}
+
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      background: 
+        linear-gradient(to right, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 100%),
+        url('background.jpeg') no-repeat center center;
+      background-size: cover;  /* background image-ஐ முழுமையாக மூடும் */
+      color: white;
+      padding: 0 5%;
+    }
+    
+        .hero-content {
+          max-width: 50%;
+          animation: fadeInSlideUp 2s ease forwards;
+        }
+        .hero-content h2 {
+          font-size: 2rem;
+          color: #00C4CC;
+          margin-bottom: 0.5rem;
+        }
+        .hero-content h1 {
+          font-size: 4rem;
+          margin-bottom: 1rem;
+        }
+        .hero-content p {
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+          color: #ccc;
+        }
+    
+        /* Other sections omitted for brevity */
+        /* Add your slide-in animations etc here */
+  
+  .who-we-are {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+  }
+  
+  .who-we-are {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+  }
+  
+  .who-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+  }
+  
+  .who-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .who-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .who-text {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .who-text h2 {
+    font-size: 2.2rem;
+    color: #00C4CC;
+  }
+  
+  .who-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-top: 1rem;
+  }
+  
+  /* Slide-in animations */
+.slide-in-left, .slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease;
+  }
+  
+  .slide-in-left {
+    transform: translateX(-50px);
+  }
+  
+  .slide-in-right {
+    transform: translateX(50px);
+  }
+  
+  .slide-in-left.visible,
+  .slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }  
+  
+  
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0faff;
+  }
+  
+  .services-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #e3f2fd, #f0faff);
+  }
+  
+  .services-section h2 {
+    color: #00C4CC;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    border-top: 5px solid #00C4CC;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0, 196, 204, 0.2);
+  }
+  
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background: rgba(0,196,204,0.05);
+    border-radius: 50%;
+  }
+  
+  .service-icon {
+    background: #729d9e;
+    color: #fff;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .service-card h3 {
+    color: #003366;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .service-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+  }  
+  
+  .why-trust-us {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom right, #e0f7f9, #ffffff);
+    text-align: center;
+  }
+  
+  .why-trust-us h2 {
+    color: #00C4CC;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  }
+  
+  .trust-reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .reason {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid rgba(0, 196, 204, 0.2);
+  }
+  
+  .reason:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 196, 204, 0.3);
+  }
+  
+  .icon {
+    background-color: #00C4CC;
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .reason h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #003D5B;
+    font-weight: 600;
+  }
+  
+  .reason p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+  }  
+  
+  /* Footer */
+  footer {
+    background: #00C4CC;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .why-choose {
+    padding: 4rem 2rem;
+    background-color: #f9fafa;
+  }
+  
+  .why-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+  }
+  
+  .why-text {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .why-text h2 {
+    font-size: 2.2rem;
+    color: #111;
+  }
+  
+  .why-text h2 span {
+    color: #00C4CC;
+  }
+  
+  .why-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-top: 1rem;
+  }
+  
+  .why-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .why-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .why-trust-us {
+    padding: 40px 20px;
+    text-align: center;
+   }
+   
+   .trust-reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+   }
+   
+   .reason {
+    background-color: #f0f8ff; /* Light blue background similar to the example */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    flex-basis: calc(33% - 30px); /* Roughly three columns on larger screens */
+    box-sizing: border-box;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially moved down */
+    animation: fadeInUp 0.8s ease-out forwards; /* Apply the animation */
+   }
+   
+   .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #007bff; /* Example primary color */
+   }
+   
+   h3 {
+    color: #005288;
+    margin-bottom: 10px;
+   }
+   
+   p {
+    color: #666;
+    font-size: 0.9em;
+   }
+   
+   /* Keyframes for the animation */
+   @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+   }
+   
+   /* Responsive adjustments */
+   @media (max-width: 960px) {
+    .reason {
+      flex-basis: calc(50% - 30px); /* Two columns on medium screens */
+    }
+   }
+   
+   @media (max-width: 600px) {
+    .reason {
+      flex-basis: 100%; /* Single column on small screens */
+    }
+   }
+   
+   /* Optional: Add a slight delay to each reason for a staggered effect */
+   .trust-reasons .reason:nth-child(1) {
+    animation-delay: 0.2s;
+   }
+   
+   .trust-reasons .reason:nth-child(2) {
+    animation-delay: 0.4s;
+   }
+   
+   .trust-reasons .reason:nth-child(3) {
+    animation-delay: 0.6s;
+   }
+   
+   .trust-reasons .reason:nth-child(4) {
+    animation-delay: 0.8s;
+   }
+   
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: left;
+      gap: 15px;
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+
+  .nav-links li a {
+    display: inline-block;
+    transition: color 0.3s ease; /* zoom effect இல்லாமல் smooth color change */
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transform: none; /* zoom effect-ஐ நிறுத்த */
+  }
+  
+  .nav-links li a:hover {
+    color: #00C4CC; /* hover ஆகும்போது நிறம் மாறும் */
+    transform: none; /* zoom effect இல்லாமல் */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* இது தான் horizontal center-align செய்யும் */
+    padding: 0;
+    margin: 0;
+    gap: 20px;  /* இடைவெளி கொடுக்க */
+  }
+  
+  .social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;  /* இது தான் horizontal center-align செய்யும் */
+    gap: 15px;
+  }
+  
+  .social-media a {
+    color: #002244;
+    font-size: 24px;
+    transition: 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #00C4CC;
+  }
+  
